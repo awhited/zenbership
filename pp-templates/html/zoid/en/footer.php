@@ -6,5 +6,6 @@
 
 <script src="%theme_url%/js/functions.js" type="text/javascript"></script>
 <script src="%theme_url%/js/mobile-menu.js" type="text/javascript"></script>
+<script src="%theme_url%/js/wistia_functions.js" type="text/javascript"></script>
 </body>
 </html>
