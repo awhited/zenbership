@@ -36,8 +36,8 @@ Note: Users will be given the option to make a Free account then buy a product w
 
 
 ### 5/16/2017  
-4 hrs
-2:00 - 6:00
+4 hrs  
+2:00 - 6:00  
 * Combed through SQL database to find  
   * where manage_home.php is called from  
   * how custom pages are put in  
@@ -52,12 +52,12 @@ Note: Users will be given the option to make a Free account then buy a product w
 ### 5/17/2017  
 
 5:30pm  
-No sleep last night...Lets see how this goes 
+No sleep last night...Lets see how this goes  
 It didn't go well  
 
 ### 5/18/2017
-5 hrs
-1:00pm - 6:00pm 
+5 hrs  
+1:00pm - 6:00pm  
 
 * created a google keep label of to-do's
 
@@ -81,14 +81,55 @@ It didn't go well
         * include the php file  
         * ob_get_contents - output results of the php file  
         * ob_end_clean() - get rid of the buffer and resume normal output  
-* user data can contain a membership level variable which we can use for wistia integration based on subscription level. "What videos are a person at this level allowed to watch?"
+* user data can contain a membership level variable which we can use for wistia integration based on subscription level. "What videos are a person at this level allowed to watch?"  
+
+### 5/21/2017  
+
+3:00pm  
 
 
 
+* Started writing javascript. more details in functions.js  
+  * user info will be passed in via meta tags. will be dropped in by php using %thing% notation before the page is generated so that the jquery can use the info.  
+* function load_video_library()  
+  * loads playlist content from wistia.  
+  * creates a custom tile for each wistia playlist  
+  * adds each tile to the dom to be positioned by flex  
+
+* Security concerns  
+  * Where to put the tokens?  
+
+* Created video library widget "/custom/widgets/video_library.php"   
+
+### 5/22/17  
+
+8:00pm  
+
+* php parse Json  
+* php curl requests  
+
+### 5/27/17
+
+4:00pm
+
+* Custom template to hold the wistia stuff  
+* So here is the official documentation for pretty much everything I gathered up there ^  
+  * http://documentation.zenbership.com/Integration/Integration-Overview  
+* Templates get turned into pages.  
+* Pages get served. 
+* Using "Member Area" section  
+* If having trouble with the content showing up google "zenbership content menu not showing up" and do the weird inserts.php fix by changing "$use_url . '/" to "'/".  
 
 
+ ### 5/30/17  
 
 
+ 11:00am - 3:30pm  
+
+ * Started building using WistiaApi php class.  
+   * setup for demo so that each project gets its own tile. Will load in the first video of the project and extract its thumbnail for the project tile.  
+   * on click, will execute php or js to load the particular lesson page. currently implemented as a php function loadlesson(id) on click. the function does nothing.  
+   
 
 
 

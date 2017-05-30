@@ -535,7 +535,7 @@ class template extends db
 
         // Widgets
         if ($this->editing != '1') {
-            $content = $this->get_widgets($content);
+            $content = $this->get_widgets($content); // returns updated version of $content
             $content = $this->get_includes($content);
             $content = $this->get_options($content);
         }
